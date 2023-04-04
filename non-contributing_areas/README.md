@@ -9,6 +9,8 @@ Non-Contributing Areas of each Geofabric dataset in $km^{2}$:
 |3    |`MERIT-Basins` |110.19±20			|
 |4    |`PFRA`         |6743.34				|
 
+**NOTE**: Since there is hole in the MERIT-Basins sub-basin polygons that was not delineated, an area of ±20 $km^{2}$ should be considered for the MERIT-Basins Non-contributing Areas.
+
 ## Shared Non-Contributing Areas between Pairs of Geofabric Datasets
 The Non-Contributing Areas shared between pairs of Geofabric Datasets (in $km^{2}$):
 
