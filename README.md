@@ -9,10 +9,10 @@ As of April 2023, only four Geospatial fabric datasets for the St. Mary & Milk R
 4. PFRA Geofabric Subset for the SMM Area (Retrieved from [Canada Open Data](https://open.canada.ca/data/en/dataset/c20d97e7-60d8-4df8-8611-4d499a796493))
 
 # Analysis
-## Non-contributing Areas
+## Non-contributing Areas of Geofabric Datasets
 The non-contributing areas of each geofabric dataset is analyzed in the [non-contributing_areas](./non-contributing_areas) directory of this repository.
 
-## Comptaibility with GWF's Hydrological/Landsurface Community Modelling Workflows
+## Comptaibility of Geofabric Datasets with GWF's Hydrological/Landsurface Modelling Workflows
 The comptatibility of each geofabric dataset is analyzed in the [compatibility](./compatibility) directory of this repository.
 
 # Support
