@@ -1,3 +1,6 @@
+# Workflow of the Analysis
+The workflow of the analysis could be viewed in the relevant Jupyter Notebook located in [geofabric_analysis.ipynb](./geofabric_analysis.ipynb).
+
 # Summary of the Analysis
 ## Non-contributing Areas of each Geofabric Dataset
 Non-Contributing Areas of each Geofabric dataset in $km^{2}$:
