@@ -25,5 +25,20 @@ The Non-Contributing Areas shared between pairs of Geofabric Datasets (in $km^{2
 |PFRA		|1227.98	|2129.43	|109.01			|NA		|
 
 ## Visual Overview of the Non-contributing Areas of each Geofabric Dataset
-![Non-Contributinf Areas of four Geofabric Datasets for the SMM area: a) HUC12, b) MERIT-Basins, c) TGF, d) PFRA](./NCA.png)
+![Non-Contributing Areas of four Geofabric Datasets for the SMM area: a) HUC12, b) MERIT-Basins, c) TGF, d) PFRA](./NCA.png)
 
+## Detailed Visual Overview of the Non-Contributing Areas of each Geofabric Dataset
+### TGF Dataset
+![TGF Dataset](./Maps/TGF/TGF_SMM_NCA_USGS.png)
+
+### MERIT-Basins Dataset
+![MERIT-Basins Dataset](./Maps/MERIT-Basins/MERIT-Basins_SMM_NCA_USGS.png)
+
+### HUC12 Dataset
+![HUC12 Dataset](./Maps/HUC12/HUC12_SMM_NCA_USGS.png)
+
+### PFRA Dataset
+![PFRA Dataset](./Maps/PFRA/PFRA_SMM_NCA_USGS.png)
+
+## Non-contributing ESRI Shapefiles of each Geofabric Dataset for `SMM`
+The ESRI Shapefile of non-contributing areas of each Geofabric Dataset for the `SMM` area is printed under the [Shapefiles](./Shapefiles) directory. The workflow to produce them is shown under the [relevant Notebook](./geofabric_analysis.ipynb) Section 2.
