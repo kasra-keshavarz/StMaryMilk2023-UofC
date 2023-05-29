@@ -8,20 +8,20 @@ Steps for river network elements:
 3. Implementing appropriate aggregation methods on river segments not associated with any sub-basins mainly because of a gauge POI (e.g., element with `seg_id_nhm`=`56910`),
 4. Assigning slope values from the corresponding [parameter database](https://www.sciencebase.gov/catalog/item/5efcbb9582ce3fd7e8a5b9ea) of the `TGF` dataset,
 5. Checking for "cycles", "spatial connectivity", and upstream/downstream coherence within the river network,
-6. Extracting river network for the St. Mary (`seg_id_nhm`=`58183`) and Milk (`seg_id_nhm`=`58242`) rivers,
+6. Extracting river network for the St. Mary (`seg_id_nhm`=`58183`) and Milk (`seg_id_nhm`=`58242`) rivers, and
 7. Adding river segments that are disconnected from the major rivers of the `SMM` area, but are still in the boundary extent of `SMM`.
 
 Steps for sub-basin geometries:
 1. Using `hru_segment_nhm` and `hru_id_nhm` values as IDs for river segments of each sub-basin and the associated sub-basin, respectively,
 2. Assigning a sub-basin to the river segments without one (e.g., `hru_id_nhm`=`112231` is assigned to `hru_segment_nhm`=`57536` that previously did not have any),
 3. Dissolving left bank and right bank for each sub-basin into one polygon and implementing proper aggregation methods,
-4. Noticing the number of sub-basins assigned to each river segments (numbers range from `1` to `5` within the TGF dataset, e.g., look at ),
+4. Noticing the number of sub-basins assigned to each river segments (numbers range from `1` to `5` within the TGF dataset),
 5. Fixing sub-basins not associated to the right river segment (e.g., `hru_id_nhm`=`110936`),
-6. Extracting sub-basins that spatially overlap with the `SMM` boundary with a buffer of 6kms,
-7. Adding sub-basins that have river segments within the `SMM` boundary detected when river segments were extracted.
+6. Extracting sub-basins that spatially overlap with the `SMM` boundary with a buffer of 6kms, and
+7. Adding sub-basins that have river segments within the `SMM` boundary detected when river segments were extracted (just a reassurance step).
 
 ## Slope values
-The slope values are taken from the corresponding parameter database found in the following: https://www.sciencebase.gov/catalog/item/5efcbb9582ce3fd7e8a5b9ea. It should be noted that for two river segments that are aggregated within the `SMM` area, namely segments with `seg_id_nhm` values of `56980` and `56910`, the slopes are only averaged and reported for the most downstream segment of the two. As is obvious, this is not an accurate aggregation method. However, as programming the proper aggregation method to do such a calculation could take more time than it is available for the project, this issue will be addresed within other projects' context.
+The slope values are taken from the corresponding parameter database (above link). It should be noted that for two river segments that are aggregated within the `SMM` area, namely segments with `seg_id_nhm` values of `56980` and `56910`, the slopes are only averaged and reported for the most downstream segment of the two. As is obvious, this is not an accurate aggregation method. However, as programming the proper aggregation method to do such a calculation could take more time than is available for the project, this issue will be addresed within other projects' context.
 
 Furthermore, the `$id` in the `seg_slope.csv` file within the parameter database corresponds to `seg_id_tb` values of river elements. This has been addressed in the final modified version of the `TGF` dataset for `SMM` area.
 
@@ -62,10 +62,10 @@ Feature with main_id 57190 is not spatially connected to its descendant with ds_
 ```
 In the text block above, the `main_id` value corresponds to `seg_id_nhm` and `ds_main_id` corresponds to `tosegment_nhm`. The ones without any downstream (or "descendant") are corrected in this workflow. The rest needs further attention that is beyond the time available for this project. For the `SMM` area, there is not issues for any spatial connectivity as everything has been verified and corrected.
 
-The workflow to generate the above text block is available in Section `1.4.1.2.`.
+The workflow to generate the above text block is available in Section `1.4.1.2.` of the workflow.
 
 ### Cycles
-As mentioned before, cycles are observed when values of `Main_ID` and `DS_Main_ID` are chosen as IDs of segments and their downstream elements. However, using the `seg_id_nhm` and `tosegment_nhm` values suggested in this workflow, no cycle is observed.
+As mentioned before, cycles are observed when values of `Main_ID` and `DS_Main_ID` are chosen as IDs of segments and their downstream elements. However, by using the `seg_id_nhm` and `tosegment_nhm` values suggested in this workflow, no cycles are observed.
 
 ### Invalid downstream ID
 The `tosegment_nhm` values for the following river segments should be assigned to zero:
@@ -76,7 +76,7 @@ The `tosegment_nhm` values for the following river segments should be assigned t
 ```
 
 ### Missing sub-basin
-The following river segments (`seg_id_nhm`) are not associated with a sub-basin as they are separated from their usptream segment via a gauge POI. It is worth mentioning that this is not an issue with `TGF` itself, but causes problems with the `GWF` modelling workflows:
+The following river segments (`seg_id_nhm`) are not associated with a sub-basin as they are separated from their downstream segment via a gauge POI. It is worth mentioning that this is not a problem with `TGF` per se, but can cause problems with the `GWF` modelling workflows:
 ```
 56910
 58440
@@ -92,5 +92,5 @@ On the other hand, the following river segments (`seg_id_nhm`) are not associate
 ```
 
 ## Sub-basin issues
-### various number of sub-basins assigned to river segments
+### Various number of sub-basins assigned to river segments
 There are various number of sub-basins that are associate with each river segment. This number can range from 1 (e.g., `hru_id_nhm`=`110017` only associated with `seg_id_nhm`=`56461`) to 5 (e.g., `hru_id_nhm`=`115975,115976,115977,115978,115989` all are associate with `seg_id_nhm`=`59474`). This could be potentially be an inaccurate representation of sub-basins for certain river segments (see `hru_id_nhm`=`118538,118557,118579,118586` that all associate with `seg_id_nhm`=`60270`).
