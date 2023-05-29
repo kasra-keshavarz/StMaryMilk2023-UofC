@@ -94,3 +94,13 @@ On the other hand, the following river segments (`seg_id_nhm`) are not associate
 ## Sub-basin issues
 ### Various number of sub-basins assigned to river segments
 There are various number of sub-basins that are associate with each river segment. This number can range from 1 (e.g., `hru_id_nhm`=`110017` only associated with `seg_id_nhm`=`56461`) to 5 (e.g., `hru_id_nhm`=`115975,115976,115977,115978,115989` all are associate with `seg_id_nhm`=`59474`). This could be potentially be an inaccurate representation of sub-basins for certain river segments (see `hru_id_nhm`=`118538,118557,118579,118586` that all associate with `seg_id_nhm`=`60270`).
+
+# Modified TGF specifications
+The ESRI Shapefiles of the modified version of `TGF` is available under the [smm_tgf_modified](./smm_tgf_modified) directory. It should be noted that, in order to save the ESRI Shapefiles, the column names were slightly adjusted. Below is the relevant information of the changes:
+
+|Shapefile   |Column name      |New column name    |Description                                   |
+|:----------:|:---------------:|:-----------------:|:---------------------------------------------|
+|smm_riv.shp |`seg_id_nhm`     |`seg_nhm`          |River segment ID                              |
+|smm_riv.shp |`tosegment_nhm`  |`ds_seg_nhm`       |Downstream segment ID                         |
+|smm_cat.shp |`hru_segment_nhm`|`seg_nhm`          |Sub-basin ID                                  |
+|smm_cat.shp |`hru_id_nhm`     |`hru_nhm`          |River segment ID associated with the sub-basin|
