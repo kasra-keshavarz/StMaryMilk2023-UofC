@@ -15,6 +15,9 @@ The non-contributing areas of each geofabric dataset is analyzed in the [non-con
 ## Comptaibility of Geofabric Datasets with GWF's Hydrological/Landsurface Modelling Workflows
 The comptatibility of each geofabric dataset with GWF's modelling workflows is analyzed in the [compatibility](./compatibility) directory of this repository.
 
+## Modified TGF for GWF workflows
+The modified verion of `TGF` for the `SMM` area that is compatible with `GWF` workflows is available under the [modified_TGF](./modified_TGF) directory of this repository.
+
 # Support
 For bug reports, questions, discussions please open a new ticket under the **Issues** tab of the current repository.
 
