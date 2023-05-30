@@ -60,15 +60,17 @@ Feature with main_id 60021 is not spatially connected to its descendant with ds_
 Feature with main_id 60034 is not spatially connected to its descendant with ds_main_id 60853
 Feature with main_id 57190 is not spatially connected to its descendant with ds_main_id 57056
 ```
-In the text block above, the `main_id` value corresponds to `seg_id_nhm` and `ds_main_id` corresponds to `tosegment_nhm`. The ones without any downstream (or "descendant") are corrected in this workflow. The rest needs further attention that is beyond the time available for this project. For the `SMM` area, there is not issues for any spatial connectivity as everything has been verified and corrected.
+In the text block above, the `main_id` value corresponds to `seg_id_nhm` and `ds_main_id` corresponds to `tosegment_nhm`. The ones without any downstream (or "descendant") are corrected in this workflow. The rest needs further attention that is beyond the time available for this project. For the `SMM` area, there are no issues for any spatial connectivity as everything has been verified and corrected.
 
-The workflow to generate the above text block is available in Section `1.4.1.2.` of the workflow.
+:Note: The spatial connectivity issues is due to either the downstream value ID is not correct (e.g., `seg_id_nhm`=`57143`), or the LineString is not built properly (e.g., `seg_id_nhm`=`57086`) in the `TGF` dataset.
+
+The workflow to generate the above text block is available in section `1.4.1.2. Check upstream/downstream connectivity` of the workflow.
 
 ### Cycles
 As mentioned before, cycles are observed when values of `Main_ID` and `DS_Main_ID` are chosen as IDs of segments and their downstream elements. However, by using the `seg_id_nhm` and `tosegment_nhm` values suggested in this workflow, no cycles are observed.
 
 ### Invalid downstream ID
-The `tosegment_nhm` values for the following river segments should be assigned to zero:
+The `tosegment_nhm` values for the following river segments should be assigned to zero. Note that this is not a problem with `TGF` and is only related to the context of the transboundary region with `GWF` modelling workflows:
 ```
 58662
 58876
@@ -76,7 +78,7 @@ The `tosegment_nhm` values for the following river segments should be assigned t
 ```
 
 ### Missing sub-basin
-The following river segments (`seg_id_nhm`) are not associated with a sub-basin as they are separated from their downstream segment via a gauge POI. It is worth mentioning that this is not a problem with `TGF` per se, but can cause problems with the `GWF` modelling workflows:
+The following river segments (`seg_id_nhm`) are not associated with a sub-basin as they are separated from their downstream segment via a gauge POI. It is worth mentioning that this is not a problem with `TGF` *per se*, but can cause problems with the `GWF` modelling workflows:
 ```
 56910
 58440
@@ -84,7 +86,7 @@ The following river segments (`seg_id_nhm`) are not associated with a sub-basin 
 62267
 ```
 
-On the other hand, the following river segments (`seg_id_nhm`) are not associated with any sub-basin:
+On the other hand, the following river segments (`seg_id_nhm`) are not associated with any sub-basin and it is an error in the `TGF` dataset:
 ```
 56880
 57536
