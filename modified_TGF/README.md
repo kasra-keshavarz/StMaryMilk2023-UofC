@@ -112,7 +112,7 @@ The ESRI Shapefiles of the modified version of `TGF` is available under the [smm
 ## Units of river segment and sub-basin attributes
 In the following, the units of various attributes of the river segments and sub-basin geometries are details. The details are taken from the [relevant parameter database](https://www.sciencebase.gov/catalog/item/5efcbb9582ce3fd7e8a5b9ea).
 
-|Shapefile   |Column name      |units              |Description                                            |
+|Shapefile   |Column name      |unit               |Description                                            |
 |:----------:|:---------------:|:-----------------:|:------------------------------------------------------|
 |smm_riv.shp |`seg_nhm`        |-                  |ID of each river segment                               |
 |smm_riv.shp |`tosegment_nhm`  |-                  |ID of downstream river segment                         |
@@ -120,4 +120,28 @@ In the following, the units of various attributes of the river segments and sub-
 |smm_riv.shp |`DS_Main_ID`     |-                  |ID of downstream river segment [recommended not to use]|
 |smm_riv.shp |`seg_id`         |-                  |ID of each river segment [recommended not to use]      |
 |smm_riv.shp |`tosegment`      |-                  |ID of downstream river segment [recommended not to use]|
-|smm_riv.shp |`
+|smm_riv.shp |`seg_id_tb`      |-                  |ID of each river segment                               |
+|smm_riv.shp |`tosegment_tb`   |-                  |ID of downstream river segment                         |
+|smm_riv.shp |`Type_Out`       |-                  |Flag to denote type of segment outlet[1]               |
+|smm_riv.shp |`HUC04`          |-                  |4-digit hydrologic unit code where feature is located  |
+|smm_riv.shp |`Shape_Length`   |meters             |Length of feature in meters                            |
+|smm_riv.shp |`seg_slope`      |-                  |Surface slope of each segment (decimal fraction)[2]    |
+|smm_cat.shp |`hru_nhm`        |-                  |A unique, sequential ID from 109952 to N for each nhru feature in the TGF domain, where N is the total number of HRUs within the NHM domain (GFv1 plus TGF). Numbering is sequential starting at the end of GFv1 "hru_id" numbering|
+|smm_cat.shp |`seg_nhm`        |-                  |Indicates the NHM segment ("hru_id_nhm") to which flow is routed from the HRU. References the "seg_id_nhm" attribute.  A value of 0 indicates there is no segment associated with the HRU, such as along parts of the coastline.|
+|smm_cat.shp |`POI_ID`         |-                  |The "POI_ID" is an ID from the source NHDPlus HR flowline data. It is the "Hydrosequence" attribute of the downstream most NHDPlus HR flowline of the segment that the HRU contributes runoff to and which the POI is derived.|
+|smm_cat.shp |`hru_id`         |-                  |A unique, sequential ID from 1 to N for each nhru feature in each HUC4, where N is the total number of HRUs within a specific HUC4.|
+|smm_cat.shp |`hru_segment`    |-                  |Indicates the within-HUC4 segment to which flow is routed from the HRU. References the "seg_id" attribute.  A value of 0 indicates there is no segment associated with the HRU, such as along parts of the coastline.|
+|smm_cat.shp |`hru_id_tb`      |-                  |A unique, sequential ID from 1 to N for each nhru feature in the transboundary (tb) domain, where N is the total number of HRUs within the TGF domain.|
+|smm_cat.shp |`hru_segment_tb` |-                  |Indicates the transboundary segment to which flow is routed from the HRU. References the "seg_id_tb" attribute.   A value of 0 indicates there is no segment associated with the HRU, such as along parts of the coastline.|
+|smm_cat.shp |`Type_NCA`       |-                  |Flag to denote whether HRU is classified broadly as a non-contributing area (NCA) [3]|
+|smm_cat.shp |`HUC4`           |-                  |4-digit hydrologic unit code where feature is located  |
+|smm_cat.shp |`Coastal_HRU`    |-                  |Flag to denote whether HRU is coastal with no corresponding "hru_segment" value, and all runoff is contributed to the ocean. [4]|
+|smm_cat.shp |`Shape_Length`   |meters             |Length of the perimeter of feature in meters           |
+|smm_cat.shp |`Shape_Area`     |square meters      |Area of feature in square meters                       |
+
+
+[^1]: 0: Segment does not leave TGF domain, 1: Leaves TGF domain (non-coastal), 2: Leaves TGF domain (coastal), 3: Terminates at non-contributing area (NCA), 4: Connects to other TGF HUC4, 5: Connects to GFv1.
+[^2]: Taken from https://www.sciencebase.gov/catalog/item/5efcbb9582ce3fd7e8a5b9ea.
+[^3]: 1: polygon represents a non-contributing HRU, 0: contributing HRU
+[^4]: 0: non-coastal HRU, 1: coastal HRU
+
