@@ -98,6 +98,8 @@ On the other hand, the following river segments (`seg_id_nhm`) are not associate
 There are various number of sub-basins that are associate with each river segment. This number can range from 1 (e.g., `hru_id_nhm`=`110017` only associated with `seg_id_nhm`=`56461`) to 5 (e.g., `hru_id_nhm`=`115975,115976,115977,115978,115989` all are associate with `seg_id_nhm`=`59474`). This could be potentially be an inaccurate representation of sub-basins for certain river segments (see `hru_id_nhm`=`118538,118557,118579,118586` that all associate with `seg_id_nhm`=`60270`).
 
 # Modified TGF specifications
+
+## River segment and sub-basin IDs
 The ESRI Shapefiles of the modified version of `TGF` is available under the [smm_tgf_modified](./smm_tgf_modified) directory. It should be noted that, in order to save the ESRI Shapefiles, the column names were slightly adjusted. Below is the relevant information of the changes:
 
 |Shapefile   |Column name      |New column name    |Description                                   |
@@ -106,3 +108,16 @@ The ESRI Shapefiles of the modified version of `TGF` is available under the [smm
 |smm_riv.shp |`tosegment_nhm`  |`ds_seg_nhm`       |Downstream segment ID                         |
 |smm_cat.shp |`hru_segment_nhm`|`seg_nhm`          |Sub-basin ID                                  |
 |smm_cat.shp |`hru_id_nhm`     |`hru_nhm`          |River segment ID associated with the sub-basin|
+
+## Units of river segment and sub-basin attributes
+In the following, the units of various attributes of the river segments and sub-basin geometries are details. The details are taken from the [relevant parameter database](https://www.sciencebase.gov/catalog/item/5efcbb9582ce3fd7e8a5b9ea).
+
+|Shapefile   |Column name      |units              |Description                                            |
+|:----------:|:---------------:|:-----------------:|:------------------------------------------------------|
+|smm_riv.shp |`seg_nhm`        |-                  |ID of each river segment                               |
+|smm_riv.shp |`tosegment_nhm`  |-                  |ID of downstream river segment                         |
+|smm_riv.shp |`Main_ID`        |-                  |ID of each river segment [recommended not to use]      |
+|smm_riv.shp |`DS_Main_ID`     |-                  |ID of downstream river segment [recommended not to use]|
+|smm_riv.shp |`seg_id`         |-                  |ID of each river segment [recommended not to use]      |
+|smm_riv.shp |`tosegment`      |-                  |ID of downstream river segment [recommended not to use]|
+|smm_riv.shp |`
