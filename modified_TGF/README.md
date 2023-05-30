@@ -62,7 +62,7 @@ Feature with main_id 57190 is not spatially connected to its descendant with ds_
 ```
 In the text block above, the `main_id` value corresponds to `seg_id_nhm` and `ds_main_id` corresponds to `tosegment_nhm`. The ones without any downstream (or "descendant") are corrected in this workflow. The rest needs further attention that is beyond the time available for this project. For the `SMM` area, there are no issues for any spatial connectivity as everything has been verified and corrected.
 
-:Note: The spatial connectivity issues is due to either the downstream value ID is not correct (e.g., `seg_id_nhm`=`57143`), or the LineString is not built properly (e.g., `seg_id_nhm`=`57086`) in the `TGF` dataset.
+Note: The spatial connectivity issues is due to either the downstream value ID is not correct (e.g., `seg_id_nhm`=`57143`), or the LineString is not built properly (e.g., `seg_id_nhm`=`57086`) in the `TGF` dataset.
 
 The workflow to generate the above text block is available in section `1.4.1.2. Check upstream/downstream connectivity` of the workflow.
 
