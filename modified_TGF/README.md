@@ -106,8 +106,8 @@ The ESRI Shapefiles of the modified version of `TGF` is available under the [smm
 |:----------:|:---------------:|:-----------------:|:---------------------------------------------|
 |smm_riv.shp |`seg_id_nhm`     |`seg_nhm`          |River segment ID                              |
 |smm_riv.shp |`tosegment_nhm`  |`ds_seg_nhm`       |Downstream segment ID                         |
-|smm_cat.shp |`hru_segment_nhm`|`seg_nhm`          |Sub-basin ID                                  |
-|smm_cat.shp |`hru_id_nhm`     |`hru_nhm`          |River segment ID associated with the sub-basin|
+|smm_cat.shp |`hru_segment_nhm`|`seg_nhm`          |River segment ID associated with the sub-basin|
+|smm_cat.shp |`hru_id_nhm`     |`hru_nhm`          |Sub-basin ID                                  |
 
 ## Units of river segment and sub-basin attributes
 In the following, the units of various attributes of the river segments and sub-basin geometries are details. The details are taken from the [relevant parameter database](https://www.sciencebase.gov/catalog/item/5efcbb9582ce3fd7e8a5b9ea).
