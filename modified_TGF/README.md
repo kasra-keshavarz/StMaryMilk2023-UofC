@@ -64,7 +64,11 @@ In the text block above, the `main_id` value corresponds to `seg_id_nhm` and `ds
 
 Note: The spatial connectivity issues is due to either the downstream value ID is not correct (e.g., `seg_id_nhm`=`57143`), or the LineString is not built properly (e.g., `seg_id_nhm`=`57086`) in the `TGF` dataset.
 
-![Wrong Downstream for river segment ID of 57143](./img/wrong_ds_id.png) ![Spatially disconnected river sgements](./img/spatially_disconnected.png)
+Wrong downstream river segment:
+![Wrong Downstream for river segment ID of 57143](./img/wrong_ds_id.png) 
+
+Spatially disconnected river segments:
+![Spatially disconnected river sgements](./img/spatially_disconnected.png)
 
 The workflow to generate the above text block is available in section `1.4.1.2. Check upstream/downstream connectivity` of the workflow.
 
