@@ -194,13 +194,36 @@ types                    = read_from_control(controlFolder/controlFile,'land_cov
 
 # ### Function reindex to extract drainage database variables
 
-# In[12]:
+# In[215]:
 
 
 def new_rank_extract(input_topology): 
         #% Reading topology file and finding outlets
         drainage_db = xs.open_dataset(input_topology)
         drainage_db.close()
+        
+        import networkx as nx
+
+        nt = xs.open_dataset(input_topology)
+        riv_graph = nx.from_pandas_edgelist(nt.to_dataframe(), source='seg_id', target='tosegment', create_using=nx.DiGraph)
+
+        nodes = nt.seg_id.to_numpy().tolist()
+        longest_branch = nx.dag_longest_path(riv_graph)
+        first_node = longest_branch[0]
+        last_node = longest_branch[-2]
+
+
+        seg = pd.Series([first_node, *nodes])
+        seg.drop_duplicates(keep='first', inplace=True)
+        seg = pd.concat([seg, pd.Series(last_node)])
+        seg.drop_duplicates(keep='last', inplace=True)
+        seg.reset_index(drop=True, inplace=True)
+        a = nt.seg_id.to_series()
+        new_idx = [np.where(a == i)[0][0] for i in seg]
+        b = nt.to_dataframe().loc[new_idx]
+        b.reset_index(inplace=True, drop=True)
+        b.index.name = 'n'
+        drainage_db = xs.Dataset(b)
 
         segid = drainage_db['seg_id'].values
         tosegment = drainage_db['tosegment'].values
@@ -341,7 +364,7 @@ def new_rank_extract(input_topology):
 
 # ##### Calling the above function
 
-# In[13]:
+# In[216]:
 
 
 rank_id_domain, drainage_db, outlet_number = new_rank_extract(input_topology)
@@ -349,7 +372,7 @@ rank_id_domain, drainage_db, outlet_number = new_rank_extract(input_topology)
 
 # ##### Reading the input zonal histogram of landcover and reindex it. 
 
-# In[15]:
+# In[218]:
 
 
 if str(input_lc_zh).endswith('.shp'):
@@ -366,7 +389,7 @@ else:
 # ##### Rename frac_0 to frac_NOD for compatibility with verify lc_types. 
 # ###### *Note: does nothing for QGIS version of zonal stats*
 
-# In[16]:
+# In[219]:
 
 
 if str(input_lc_zh).endswith('.csv'):
@@ -383,7 +406,7 @@ if str(input_lc_zh).endswith('.csv'):
 
 # ##### (OPTIONAL) Sanity check of the subbasin selection 
 
-# In[17]:
+# In[220]:
 
 
 ## NB: this section can be uncommented if a user want to do a sanity check of the subbasin selection 
@@ -412,7 +435,7 @@ if str(input_lc_zh).endswith('.csv'):
 
 # ##### *LANDSAT*
 
-# In[18]:
+# In[221]:
 
 
 # NB: the NOD here represent the No-data. The NALCMS data has no-data category which its values is zero
@@ -421,7 +444,7 @@ lc_type = np.array(types)
 
 # ##### *MODIS*
 
-# In[19]:
+# In[222]:
 
 
 # lc_type = np.array(['Evergreen Needleleaf Forests','Evergreen Broadleaf Forests','Deciduous Needleleaf Forests','Deciduous Broadleaf Forests',
@@ -433,7 +456,7 @@ lc_type = np.array(types)
 
 # ##### Verify the list of lc_types
 
-# In[20]:
+# In[223]:
 
 
 m = len(lc_type) + 1
@@ -463,7 +486,7 @@ if (len(p) != 0) :
 
 # ##### Extract land cover zonal hist
 
-# In[21]:
+# In[224]:
 
 
 lc_frac = lc_zonal_hist.filter(like=lc_type_prefix, axis = 1).copy()
@@ -473,7 +496,7 @@ lc_frac = lc_zonal_hist.filter(like=lc_type_prefix, axis = 1).copy()
 # 
 # Here the it is required to add NALCMS-NOD to land class type of Water if No-data is included in lc_type
 
-# In[22]:
+# In[225]:
 
 
 fid = np.where(lc_type == 'No-data')[0]
@@ -492,7 +515,7 @@ lc_frac['Dump'] = 0
 
 # ##### Calculating land cover percentage. Only calculate if input zonal histogram is a shapefile (i.e. QGIS version)
 
-# In[23]:
+# In[226]:
 
 
 if str(input_lc_zh).endswith('.shp'):
@@ -501,7 +524,7 @@ if str(input_lc_zh).endswith('.shp'):
 
 # ### Convert the lc_frac as a dataset and save it as netcdf
 
-# In[24]:
+# In[227]:
 
 
 lon = drainage_db['lon'].values
@@ -523,7 +546,7 @@ lc_ds =  xs.Dataset(
 
 # ##### Meta data attributes 
 
-# In[25]:
+# In[228]:
 
 
 lc_ds.attrs['Conventions'] = 'CF-1.6'
@@ -552,7 +575,7 @@ lc_ds['crs'] = drainage_db['crs'].copy()
 
 # ##### Append land cover information to existing drainage database 
 
-# In[26]:
+# In[229]:
 
 
 drainage_db["GRU"] = (["subbasin", "gru"], lc_frac.values)
@@ -566,7 +589,7 @@ drainage_db["LandUse"] = (["gru"], lc_type)
 
 # ##### Set the 'coords' of the dataset to the new axes.
 
-# In[27]:
+# In[230]:
 
 
 drainage_db = drainage_db.set_coords(['time', 'lon', 'lat'])
@@ -574,7 +597,13 @@ drainage_db = drainage_db.set_coords(['time', 'lon', 'lat'])
 
 # ##### Save the drainage database
 
-# In[28]:
+# In[232]:
+
+
+drainage_db
+
+
+# In[233]:
 
 
 outDDB = domain_name+'_MESH_drainage_database.nc'
@@ -583,7 +612,7 @@ drainage_db.to_netcdf(outdir/outDDB)
 
 # ##### (OPTIONAL) Save land cover fraction
 
-# In[29]:
+# In[234]:
 
 
 outFRAC = domain_name+'_MESH_LC_FRAC.nc'
