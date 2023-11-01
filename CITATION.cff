@@ -1,0 +1,33 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  University of Calgary's contribution to the International
+  Joint Commision's (IJC) hydrological modelling study of
+  the transboundary St. Mary and Milk (SMM) river basins
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Kasra
+    family-names: Keshavarz
+    email: kasra.keshavarz1@ucalgary.ca
+    affiliation: 'Schulich School of Engineering, University of Calgary'
+  - given-names: Paul
+    family-names: Coderre
+    email: paul.coderre@ucalgary.ca
+    affiliation: 'Schulich School of Engineering, University of Calgary'
+  - given-names: Alain
+    family-names: Pietroniro
+    email: alain.pietroniro@ucalgary.ca
+    affiliation: 'Schulich School of Engineering, University of Calgary'
+repository-code: 'https://github.com/kasra-keshavarz/StMaryMilk2023-UofC'
+keywords:
+  - >-
+    International Joint Commission, IJC, St. Mary river,
+    Milk river, St. Mary and Milk river basins, 
+license: GPL-3.0-or-later
+date-released: '2023-12-31'
+
