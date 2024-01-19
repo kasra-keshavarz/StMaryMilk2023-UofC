@@ -76,13 +76,13 @@ to create a virtual environment using the file mentioned above.
 In brief, you can create a Oython virtual environment (after assuring all
 the modules are loaded) with:
 ```console
-foo@bar:~$ module restore fhimp-mods
+foo@bar:~$ module restore scimods
 foo@bar:~$ virtualenv /path/to/virtualenv/your-virtual-env
 ```
 
 After creating, you can activate the environment with:
 ```console
-foo@bar:~$ source /path/to/virtualenv/fhimp-env/bin/activate
+foo@bar:~$ source /path/to/virtualenv/your-virtual-env/bin/activate
 (your-virtual-env) foo@bar:~$ # this is how it will look
 ```
 
