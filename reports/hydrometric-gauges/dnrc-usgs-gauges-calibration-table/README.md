@@ -1,5 +1,5 @@
 # DNRC gauges used
-This directory contains a table, detailing information of `DNRC` gauges, their equivalent USGS IDs, name, and geographic coordinates (latitude and logitude), that have been employed in the recent calibration efforts of the `HYPE` hydrological model for the region.
+This directory contains the [information table](./dnrc-usgs-gauges-calibration-table.csv) in the `.csv` format, detailing necessary information on the employed `DNRC` gauges used in the calibration process of the `HYPE` hydrological model. The information includes DNRC gauges' names, their equivalent USGS IDs and code names, and their geographic coordinates (i.e., latitude and logitude).
 
 This table has been created by [Paul Coderre](paul.coderre@ucalgary.ca).
 
