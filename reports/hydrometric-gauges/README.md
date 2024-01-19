@@ -3,7 +3,7 @@
 In this section, the `DNRC` (Montana Department of Natural Resources and Conservation) naturalized flow data available for the `SMM` region, their locations, time-scales, details on the applied adjustments and modifications, and relevant workflows are presented.
 
 # DNRC gauges used
-The [dnrc-usgs-gauges-calibration-table](./dnrc-usgs-gauges-calibration-table) directory contains a table in the `.csv` format, detailing information on the employed `DNRC` gauges used in the calibration process of the `HYPE` hydrological model, gauges' equivalent USGS IDs and code names, and their geographic coordinates (i.e., latitudes and logitudes).
+The [dnrc-usgs-gauges-calibration-table](./dnrc-usgs-gauges-calibration-table) directory contains a table in the `.csv` format, detailing necessary information on the employed `DNRC` gauges used in the calibration process of the `HYPE` hydrological model. The information includes, gauges' names, their equivalent USGS IDs and code names, and thir corresponding geographic coordinates (i.e., latitudes and logitudes).
 
 # ESRI Shapefile of the used DNRC gauges
 An ESRI Shapefile of the emplpyed DNRC gauges in the calibration process of the `HYPE` hydrological model have been created based on the [dnrc-usgs-gauges-calibration-table.csv](./dnrc-usgs-gauges-calibration-table/dnrc-usgs-gauges-calibration-table.csv) table. Since the generation of this ESRI Shapefile is a trivial processs, the relevant workflow has been omitted from this repository.
