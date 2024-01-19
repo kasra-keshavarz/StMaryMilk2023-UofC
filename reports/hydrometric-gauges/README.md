@@ -9,7 +9,7 @@ The [dnrc-usgs-gauges-calibration-table](./dnrc-usgs-gauges-calibration-table) d
 An ESRI Shapefile of the DNRC gauges have been created based on the [dnrc-usgs-gauges-calibration-table.csv](./dnrc-usgs-gauges-calibration-table/dnrc-usgs-gauges-calibration-table.csv) file. Since the creation of this ESRI Shapefile is trivial, the workflow to do so is omitted from this repository.
 
 # Modifications on the DNRC gauge data
-The workflow to modify the the gauge data has been retrieved from [Madeline Gabriela Tucker](mailto:mgtucker@uwaterloo.ca), and has been further modified by [Paul Coderre](mailto:paul.coderre@ucalgary.ca). Below the workflows, authors, and output of each are described:
+The workflow to modify the the gauge data has been retrieved from [Madeline Gabriela Tucker](mailto:mgtucker@uwaterloo.ca), and has been further modified by [Paul Coderre](mailto:paul.coderre@ucalgary.ca). Below the workflows and their authors are detailed:
 1. [write_observations.R](./dnrc-usgs-gauges-calibration-workflow/write_observations.R):
 	* written by [Madeline Gabriela Tucker](mailto:mgtucker@uwaterloo.ca),
 	* accessed from https://github.com/jwtrubil/SMM_Raven_hydro.
