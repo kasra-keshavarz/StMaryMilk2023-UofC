@@ -113,29 +113,30 @@ foo@bar:~$ ipython kernel install --name "your-virtual-env" --user
 Once added as a kernel, you should it within your JupyterHub's sessions.
 
 # Additional datasets necessary
-1. Provinces/Territories, Cartographic Boundary File - 2016 Census: https://open.canada.ca/data/en/dataset/a883eb14-0c0e-45c4-b8c4-b54c4a819edb </b>
-2. MERIT-Basins vector hydrography Dataset (v0.7/v1.0, minor bug fix for coastaline pixels): https://www.reachhydro.org/home/params/merit-basins </b>
+1. MERIT-Basins vector hydrography Dataset (v0.7/v1.0, minor bug fix for coastaline pixels): https://www.reachhydro.org/home/params/merit-basins </b>
 
    `MERIT-Basins` is available on Graham HPC under the following directory:
    ```console
-   /project/rpp-kshook/Model_Output/MERIT-Basins
+   /project/rrg-mclark/data/geospatial-data/MERIT-Basins
    ```
 
-3. Datatool (version v0.4.2-dev, commit f0b7197): https://github.com/kasra-keshavarz/datatool </b>
+2. Datatool (version v0.4.2-dev, commit f0b7197): https://github.com/kasra-keshavarz/datatool </b>
 
    Download with:
    ```console
    foo@bar:~$ git clone https://github.com/kasra-keshavarz/datatool
    ```
 
-4. GIStool (version v0.1.7-dev, commit 86ad889): https://github.com/kasra-keshavarz/gistool </b>
+3. GIStool (version v0.1.7-dev, commit 86ad889): https://github.com/kasra-keshavarz/gistool </b>
 
    Download with:
    ```console
    foo@bar:~$ git clone https://github.com/kasra-keshavarz/gistool
    ```
 
-5. EASYMORE (v2.0.0): https://github.com/ShervanGharari/EASYMORE </b>
-   
-   For installation, please follow guidelines provided in the repository
-   itself.
+4. EASYMORE (v2.0.0): https://github.com/ShervanGharari/EASYMORE </b>
+  
+   Download with:
+   ```console
+   foo@bar:~$ pip install "easymore==2.0.0"
+   ```
