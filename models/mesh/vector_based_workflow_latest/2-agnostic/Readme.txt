@@ -5,6 +5,8 @@ hydrological models, specifically, running `datatool`, `gistool`, and
 `easymore` to extract necessary information to set up various hydrological
 models. Below the detail of each workflow is explained:
 
+Modify any segment of the `JSON` file as needed!
+
 
 Workflows
 ---------
