@@ -47,6 +47,10 @@ Workflows
       Digital Research Alliance of Canada (DRA)'s Graham HPC in an attempt
       to minimize user interactions with the workflows mentioned above.
 
+      The run the "agnostic orchestrator", you need to simply provide the
+      input JSON file to the Bash script:
+        $ ./model-agnostic.sh model-agnostic.json
+
 
 Datasets
 --------
