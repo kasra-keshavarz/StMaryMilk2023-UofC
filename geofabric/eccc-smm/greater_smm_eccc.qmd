@@ -1,0 +1,145 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.34.3-Prizren">
+  <identifier>Large Domain</identifier>
+  <parentidentifier></parentidentifier>
+  <language>ENG</language>
+  <type>dataset</type>
+  <title>National Watershed Boundary Dataset (WBD)</title>
+  <abstract>The Watershed Boundary Dataset (WBD) is a comprehensive aggregated collection of hydrologic unit data consistent with the national criteria for delineation and resolution. It defines the areal extent of surface water drainage to a point except in coastal or lake front areas where there could be multiple outlets as stated by the "Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD)" “Standard” (http://pubs.usgs.gov/tm/11/a3/). Watershed boundaries are determined solely upon science-based hydrologic principles, not favoring any administrative boundaries or special projects, nor particular program or agency. This dataset represents the hydrologic unit boundaries to the 12-digit (6th level) for the entire United States. Some areas may also include additional subdivisions representing the 14- and 16-digit hydrologic unit (HU). At a minimum, the HUs are delineated at 1:24,000-scale in the conterminous United States, 1:25,000-scale in Hawaii, Pacific basin and the Caribbean, and 1:63,360-scale in Alaska, meeting the National Map Accuracy Standards (NMAS). Higher resolution boundaries are being developed where partners and data exist and will be incorporated back into the WBD. WBD data are delivered as a dataset of polygons and corresponding lines that define the boundary of the polygon. WBD polygon attributes include hydrologic unit codes (HUC), size (in the form of acres and square kilometers), name, downstream hydrologic unit code, type of watershed, non-contributing areas, and flow modifications. The HUC describes where the unit is in the country and the level of the unit. WBD line attributes contain the highest level of hydrologic unit for each boundary, line source information and flow modifications.
+
+The intent of defining Hydrologic Units (HU) within the Watershed Boundary Dataset is to establish a base-line drainage boundary framework, accounting for all land and surface areas. Hydrologic units are intended to be used as a tool for water-resource management and planning activities particularly for site-specific and localized studies requiring a level of detail provided by large-scale map information. The WBD complements the National Hydrography Dataset (NHD) and supports numerous programmatic missions and activities including: watershed management, rehabilitation and enhancement, aquatic species conservation strategies, flood plain management and flood prevention, water-quality initiatives and programs, dam safety programs, fire assessment and management, resource inventory and assessment, water data analysis and water census.
+
+The Watershed Boundary Dataset (WBD) is a comprehensive aggregated collection of hydrologic unit data consistent with the national criteria for delineation and resolution. It defines the areal extent of surface water drainage to a point except in coastal or lake front areas where there could be multiple outlets as stated by the "Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD)" “Standard” (http://pubs.usgs.gov/tm/11/a3/). Watershed boundaries are determined solely upon science-based hydrologic principles, not favoring any administrative boundaries or special projects, nor particular program or agency. This dataset represents the hydrologic unit boundaries to the 12-digit (6th level) for the entire United States. Some areas may also include additional subdivisions representing the 14- and 16-digit hydrologic unit (HU). At a minimum, the HUs are delineated at 1:24,000-scale in the conterminous United States, 1:25,000-scale in Hawaii, Pacific basin and the Caribbean, and 1:63,360-scale in Alaska, meeting the National Map Accuracy Standards (NMAS). Higher resolution boundaries are being developed where partners and data exist and will be incorporated back into the WBD. WBD data are delivered as a dataset of polygons and corresponding lines that define the boundary of the polygon. WBD polygon attributes include hydrologic unit codes (HUC), size (in the form of acres and square kilometers), name, downstream hydrologic unit code, type of watershed, non-contributing areas, and flow modifications. The HUC describes where the unit is in the country and the level of the unit. WBD line attributes contain the highest level of hydrologic unit for each boundary, line source information and flow modifications.
+
+The intent of defining Hydrologic Units (HU) within the Watershed Boundary Dataset is to establish a base-line drainage boundary framework, accounting for all land and surface areas. Hydrologic units are intended to be used as a tool for water-resource management and planning activities particularly for site-specific and localized studies requiring a level of detail provided by large-scale map information. The WBD complements the National Hydrography Dataset (NHD) and supports numerous programmatic missions and activities including: watershed management, rehabilitation and enhancement, aquatic species conservation strategies, flood plain management and flood prevention, water-quality initiatives and programs, dam safety programs, fire assessment and management, resource inventory and assessment, water data analysis and water census.
+
+The WBD was produced and is maintained through a cooperative process involving state, federal and local partners. Process information for a specific state or region can be found within the state specific metadata located at http://nhd.usgs.gov/wbd_metdata.html. This metadata file has information for WBD features contained in the WBD feature dataset. This includes information about the 2-, 4-, 6-, 8-, 10-, 12-, 14-, 16-digit polygons and WBD_Line dataset. Users accessing the WBD via shapefile will need to search for the attribution related to that specific dataset.
+
+The WBD was produced and is maintained through a cooperative process involving state, federal and local partners. Process information for a specific state or region can be found within the state specific metadata located at http://nhd.usgs.gov/wbd_metdata.html. This metadata file has information for WBD features contained in the WBD feature dataset. This includes information about the 2-, 4-, 6-, 8-, 10-, 12-, 14-, 16-digit polygons and WBD_Line dataset. Users accessing the WBD via shapefile will need to search for the attribution related to that specific dataset.</abstract>
+  <keywords vocabulary="Search keys">
+    <keyword>16-digit</keyword>
+    <keyword>Hydrologic Unit Code</keyword>
+    <keyword>Region</keyword>
+    <keyword>US</keyword>
+    <keyword>4-digit</keyword>
+    <keyword>HUC</keyword>
+    <keyword>United States</keyword>
+    <keyword>Watershed Boundary Dataset</keyword>
+    <keyword>2-digit</keyword>
+    <keyword>Basin</keyword>
+    <keyword>10-digit</keyword>
+    <keyword>Hydrologic Units</keyword>
+    <keyword>Sub-basin</keyword>
+    <keyword>Watershed</keyword>
+    <keyword>WBD</keyword>
+    <keyword>6-digit</keyword>
+    <keyword>inlandWaters</keyword>
+    <keyword>Sub-region</keyword>
+    <keyword>Subwatershed</keyword>
+    <keyword>12-digit</keyword>
+    <keyword>14-digit</keyword>
+    <keyword>8-digit</keyword>
+  </keywords>
+  <keywords vocabulary="gmd:topicCategory">
+    <keyword>16-digit</keyword>
+    <keyword>Hydrologic Unit Code</keyword>
+    <keyword>Region</keyword>
+    <keyword>4-digit</keyword>
+    <keyword>HUC</keyword>
+    <keyword>Watershed Boundary Dataset</keyword>
+    <keyword>2-digit</keyword>
+    <keyword>Basin</keyword>
+    <keyword>10-digit</keyword>
+    <keyword>Hydrologic Units</keyword>
+    <keyword>Sub-basin</keyword>
+    <keyword>Watershed</keyword>
+    <keyword>WBD</keyword>
+    <keyword>6-digit</keyword>
+    <keyword>inlandWaters</keyword>
+    <keyword>Sub-region</keyword>
+    <keyword>Subwatershed</keyword>
+    <keyword>12-digit</keyword>
+    <keyword>14-digit</keyword>
+    <keyword>8-digit</keyword>
+    <keyword>inlandWaters</keyword>
+  </keywords>
+  <contact>
+    <contactAddress>
+      <type>postal</type>
+      <address>U.S. Geological Survey, National Geospatial Technical Operations Center, P.O. Box 25046</address>
+      <city>Denver</city>
+      <administrativearea>CO</administrativearea>
+      <postalcode>80225</postalcode>
+      <country></country>
+    </contactAddress>
+    <name>WBD Point of Contact</name>
+    <organization>U.S. Geological Survey</organization>
+    <position></position>
+    <voice>1-877-275-8747</voice>
+    <fax></fax>
+    <email>bpgeo@usgs.gov</email>
+    <role>Point of contact</role>
+  </contact>
+  <contact>
+    <contactAddress>
+      <type>Mailing</type>
+      <address>U.S. Geological Survey, National Geospatial Technical Operations Center, P.O. Box 25046</address>
+      <city>Denver</city>
+      <administrativearea>CO</administrativearea>
+      <postalcode>80225</postalcode>
+      <country></country>
+    </contactAddress>
+    <name>U.S. Geological Survey</name>
+    <organization>U.S. Geological Survey</organization>
+    <position></position>
+    <voice>1-877-275-8747</voice>
+    <fax></fax>
+    <email>bpgeo@usgs.gov</email>
+    <role>Point of contact</role>
+  </contact>
+  <links>
+    <link mimeType="" url="ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/Hydrography/WBD/National/GDB/National_WBD.zip" size="" name="Vector Digital Data Set (Polygon)" description="" type="" format=""/>
+  </links>
+  <history>Data source: Hydrography data used for reference in watershed boundary delineation process</history>
+  <history>Data source: Aerial imagery used for reference in watershed boundary delineation</history>
+  <history>Data source: Reference dataset for the 2-, 4-, 6- and 8-digit hydrologic units</history>
+  <history>Data source: Base information for hydrologic unit delineation.</history>
+  <history>Data source: Base information for hydrologic unit delineation.</history>
+  <dates>
+    <date value="2015-12-16T00:00:00" type="Published"/>
+  </dates>
+  <fees></fees>
+  <constraints type="Limitations of use">The distributor shall not be held liable for improper or incorrect use of this data, based on the description of appropriate/inappropriate uses described in this metadata document. It is strongly recommended that this data is directly acquired from the distributor and not indirectly through other sources which may have changed the data in some way. These data should not be used at scales greater than 1:24,000 for the purpose of identifying hydrographic watershed boundary feature locations in the United States. The Watershed Boundary Dataset is public information and may be interpreted by all organizations, agencies, units of government, or others based on needs; however, they are responsible for the appropriate application of the data. Photographic or digital enlargement of these maps to scales greater than that at which they were originally delineated can result in misrepresentation of the data. If enlarged, the maps will not include the fine detail that would be appropriate for mapping at the small scale. Digital data files are periodically updated and users are responsible for obtaining the latest version of the data from the source distributor. Acknowledgment of the origination agencies would be appreciated in products derived from these data.</constraints>
+  <constraints type="Access">None</constraints>
+  <rights>Funding for the Watershed Boundary Dataset (WBD) was provided by the USDA-NRCS, USGS and EPA along with other federal, state and local agenciesies. Representatives from many agencies contributed a substantial amount of time and salary towards quality review and updating of the dataset in order to meet the WBD Standards. Acknowledgment of the originating agencies would be appreciated in products derived from these data. See dataset specific metadata for further information</rights>
+  <rights>The distributor shall not be held liable for improper or incorrect use of this data, based on the description of appropriate/inappropriate uses described in this metadata document. It is strongly recommended that this data is directly acquired from the distributor and not indirectly through other sources which may have changed the data in some way. These data should not be used at scales greater than 1:24,000 for the purpose of identifying hydrographic watershed boundary feature locations in the United States. The Watershed Boundary Dataset is public information and may be interpreted by all organizations, agencies, units of government, or others based on needs; however, they are responsible for the appropriate application of the data. Photographic or digital enlargement of these maps to scales greater than that at which they were originally delineated can result in misrepresentation of the data. If enlarged, the maps will not include the fine detail that would be appropriate for mapping at the small scale. Digital data files are periodically updated and users are responsible for obtaining the latest version of the data from the source distributor. Acknowledgment of the origination agencies would be appreciated in products derived from these data.</rights>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt>GEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. Puerto Rico. United States (USA) - Alabama; Alaska; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Hawaii; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming. US Virgin Islands. British Virgin Islands."],BBOX[14.92,167.65,86.46,-47.74]],ID["EPSG",4269]]</wkt>
+      <proj4>+proj=longlat +datum=NAD83 +no_defs</proj4>
+      <srsid>3401</srsid>
+      <srid>4269</srid>
+      <authid>EPSG:4269</authid>
+      <description>NAD83</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial minz="0" dimensions="2" crs="EPSG:4269" minx="-179.22965548700000227" miny="-14.42469509430000052" maxx="179.85667473500001279" maxz="0" maxy="71.43957259020000095"/>
+    <temporal>
+      <period>
+        <start>2015-12-16T07:00:00Z</start>
+        <end></end>
+      </period>
+    </temporal>
+    <temporal>
+      <period>
+        <start></start>
+        <end></end>
+      </period>
+    </temporal>
+  </extent>
+</qgis>
