@@ -28,6 +28,7 @@
       "ensemble": "",
       "prefix": "smm_model_",
       "email": "your-email@company.ca",
+      "account": "rrg-mclark",
       "_flags": [
         "submit-job",
         "parsable"
@@ -52,6 +53,8 @@
       "quantile": "",
       "prefix": "smm_model_",
       "email": "your-email@company.ca",
+      "account": "rrg-mclark",
+      "lib-path": "/project/rrg-mclark/lib/",
       "_flags": [
 	"include-na",
         "submit-job",
@@ -76,6 +79,8 @@
       "quantile": "",
       "prefix": "smm_model_",
       "email": "your-email@company.ca",
+      "account": "rrg-mclark",
+      "lib-path": "/project/rrg-mclark/lib/",
       "_flags": [
 	"include-na",
         "submit-job",
@@ -103,6 +108,7 @@
       "remapped-var-id": "hru_nhm",
       "remapped-dim-id": "hru_nhm",
       "output-dir": "/home/your-user-name/scratch/smm-models/easymore-outputs",
+      "job-conf": "/path/to/easymore-job.slurm",
       "_flags": [
         "submit-job"
       ]
