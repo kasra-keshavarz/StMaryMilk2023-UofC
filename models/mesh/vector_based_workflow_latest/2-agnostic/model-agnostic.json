@@ -1,7 +1,7 @@
 {
   "exec": {
-    "met": "/home/kasra545/github-repos/datatool/extract-dataset.sh",
-    "gis": "/home/kasra545/github-repos/gistool/extract-gis.sh",
+    "met": "/home/sujata1/datatool/extract-dataset.sh",
+    "gis": "/home/sujata1/gistool/extract-gis.sh",
     "remap": "easymore cli"
   },
 
@@ -18,16 +18,16 @@
         "RDRS_v2.1_P_FB_SFC",
         "RDRS_v2.1_P_FI_SFC"
       ],
-      "output-dir": "/home/kasra545/scratch/smm-models/datatool-outputs",
+      "output-dir": "/home/sujata1/scratch/smm-models/datatool-outputs",
       "start-date": "1980-01-01T13:00:00",
-      "end-date": "1980-12-31T12:00:00",
+      "end-date": "1980-01-21T12:00:00",
       "lat-lims": "",
       "lon-lims": "",
-      "shape-file": "/home/kasra545/smm-models/geofabric/catchments.shp",
+      "shape-file": "/home/sujata1/scratch/smm-models/geofabric/catchments.shp",
       "model": "",
       "ensemble": "",
       "prefix": "smm_model_",
-      "email": "your-email@company.ca",
+      "email": "kasra.keshavarz1@ucalgary.ca",
       "account": "rrg-mclark",
       "_flags": [
         "submit-job",
@@ -41,10 +41,10 @@
       "variable": "land-cover",
       "start-date": "2015",
       "end-date": "2015",
-      "output-dir": "/home/your-user-name/scratch/smm-models/gistool-outputs",
+      "output-dir": "/home/sujata1/scratch/smm-models/gistool-outputs",
       "lat-lims": "",
       "lon-lims": "",
-      "shape-file": "/home/your-user-name/path/to/smm/catchment/shapefile.shp",
+      "shape-file": "/home/sujata1/scratch/smm-models/geofabric/catchments.shp",
       "print-geotiff": "true",
       "stat": [
         "frac",
@@ -52,8 +52,9 @@
       ],
       "quantile": "",
       "prefix": "smm_model_",
-      "email": "your-email@company.ca",
+      "email": "kasra.keshavarz1@ucalgary.ca",
       "account": "rrg-mclark",
+      "fid": "seg_nhm",
       "lib-path": "/project/rrg-mclark/lib/",
       "_flags": [
 	"include-na",
@@ -68,18 +69,19 @@
       "variable": "soil_classes",
       "start-date": "",
       "end-date": "",
-      "output-dir": "/home/your-user-name/scratch/smm-models/gistool-outputs",
+      "output-dir": "/home/sujata1/scratch/smm-models/gistool-outputs",
       "lat-lims": "",
       "lon-lims": "",
-      "shape-file": "/home/your-user-name/path/to/smm/catchment/shapefile.shp",
+      "shape-file": "/home/sujata1/scratch/smm-models/geofabric/catchments.shp",
       "print-geotiff": "true",
       "stat": [
         "majority"
       ],
       "quantile": "",
       "prefix": "smm_model_",
-      "email": "your-email@company.ca",
+      "email": "kasra.keshavarz1@ucalgary.ca",
       "account": "rrg-mclark",
+      "fid": "seg_nhm",
       "lib-path": "/project/rrg-mclark/lib/",
       "_flags": [
 	"include-na",
@@ -90,10 +92,10 @@
 
     "remap": [{
       "case-name": "ab_models",
-      "cache": "/home/your-user-name/scratch/smm-models/cache/",
-      "shapefile": "/home/your-user-name/path/to/smm/catchment/shapefile.shp",
-      "shapefile-id": "hru_nhm",
-      "source-nc": "/home/your-user-name/scratch/smm-models/datatool-outputs/**/*.nc*",
+      "cache": "/home/sujata1/scratch/smm-models/easymore-outputs/cache/",
+      "shapefile": "/home/sujata1/scratch/smm-models/geofabric/catchments.shp",
+      "shapefile-id": "seg_nhm",
+      "source-nc": "/home/sujata1/scratch/smm-models/datatool-outputs/**/*.nc*",
       "variable-lon": "lon",
       "variable-lat": "lat",
       "variable": [
@@ -105,10 +107,10 @@
         "RDRS_v2.1_P_FB_SFC",
         "RDRS_v2.1_P_FI_SFC"
       ],
-      "remapped-var-id": "hru_nhm",
-      "remapped-dim-id": "hru_nhm",
-      "output-dir": "/home/your-user-name/scratch/smm-models/easymore-outputs",
-      "job-conf": "/path/to/easymore-job.slurm",
+      "remapped-var-id": "id",
+      "remapped-dim-id": "id",
+      "output-dir": "/home/sujata1/scratch/smm-models/easymore-outputs/",
+      "job-conf": "/home/sujata1/StMaryMilk2023-UofC/models/mesh/vector_based_workflow_latest/2-agnostic/easymore-job.slurm",
       "_flags": [
         "submit-job"
       ]
