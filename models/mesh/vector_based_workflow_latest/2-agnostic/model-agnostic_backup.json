@@ -1,7 +1,7 @@
 {
   "exec": {
-    "met": "/home/kasra545/github-repos/datatool/extract-dataset.sh",
-    "gis": "/home/kasra545/github-repos/gistool/extract-gis.sh",
+    "met": "/path/to/datatool/extract-dataset.sh",
+    "gis": "/path/to/gistool/extract-gis.sh",
     "remap": "easymore cli"
   },
 
@@ -18,12 +18,12 @@
         "RDRS_v2.1_P_FB_SFC",
         "RDRS_v2.1_P_FI_SFC"
       ],
-      "output-dir": "/home/kasra545/scratch/smm-models/datatool-outputs",
+      "output-dir": "/home/your-user-name/scratch/smm-models/datatool-outputs",
       "start-date": "1980-01-01T13:00:00",
       "end-date": "1980-12-31T12:00:00",
       "lat-lims": "",
       "lon-lims": "",
-      "shape-file": "/home/kasra545/smm-models/geofabric/catchments.shp",
+      "shape-file": "/home/your-user-name/path/to/smm/catchment/shapefile.shp",
       "model": "",
       "ensemble": "",
       "prefix": "smm_model_",
