@@ -120,14 +120,14 @@ Once added as a kernel, you should it within your JupyterHub's sessions.
    /project/rrg-mclark/data/geospatial-data/MERIT-Basins
    ```
 
-2. Datatool (version v0.4.2-dev, commit f0b7197): https://github.com/kasra-keshavarz/datatool </b>
+2. Datatool (version v0.4.2-dev, commit a80444c): https://github.com/kasra-keshavarz/datatool </b>
 
    Download with:
    ```console
    foo@bar:~$ git clone https://github.com/kasra-keshavarz/datatool
    ```
 
-3. GIStool (version v0.1.7-dev, commit 86ad889): https://github.com/kasra-keshavarz/gistool </b>
+3. GIStool (version v0.1.7-dev, commit e373e38): https://github.com/kasra-keshavarz/gistool </b>
 
    Download with:
    ```console
