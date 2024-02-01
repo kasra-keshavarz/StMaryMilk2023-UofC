@@ -134,9 +134,9 @@ Once added as a kernel, you should it within your JupyterHub's sessions.
    foo@bar:~$ git clone https://github.com/kasra-keshavarz/gistool
    ```
 
-4. EASYMORE (v2.0.0): https://github.com/ShervanGharari/EASYMORE </b>
+4. EASYMORE (v2.0.0-dev): https://github.com/ShervanGharari/EASYMORE </b>
   
    Download with:
    ```console
-   foo@bar:~$ pip install "easymore==2.0.0"
+   foo@bar:~$ pip install git+https://github.com/ShervanGharari/EASYMORE.git
    ```
