@@ -91,7 +91,7 @@
     }],
 
     "remap": [{
-      "case-name": "ab_models",
+      "case-name": "remapped",
       "cache": "/home/sujata1/scratch/smm-models/easymore-outputs/cache/",
       "shapefile": "/home/sujata1/scratch/smm-models/geofabric/catchments.shp",
       "shapefile-id": "seg_nhm",
