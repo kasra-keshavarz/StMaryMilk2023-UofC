@@ -1,0 +1,23 @@
+Restoring modules from user's easymore
+Lmod Warning: Warning, April 3rd 2024, the default standard environment module
+will be changed to a more recent one.
+To test your jobs with the new environment, please run:
+module load StdEnv/2023
+
+To change your default version immediately, please run the following command:
+
+echo "module-version StdEnv/2023 default" >> $HOME/.modulerc
+
+For more information, please see:
+https://docs.computecanada.ca/wiki/Standard_software_environments 
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    StdEnv/2020      /cvmfs/soft.computecanada.ca/custom/modules/StdEnv/2020.lua
+
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: ipykernel/2023b (required by: ipython-kernel/3.10)
+-------------------------------------------------------------------------------
+slurmstepd: error: *** JOB 17333562 ON gra1232 CANCELLED AT 2024-03-02T18:57:44 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 17333562 STEPD TERMINATED ON gra1232 AT 2024-03-02T19:01:04 DUE TO JOB NOT ENDING WITH SIGNALS ***
+slurmstepd: error: Container 84093 in cgroup plugin has 21 processes, giving up after 159 sec

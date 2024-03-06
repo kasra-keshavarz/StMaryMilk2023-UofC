@@ -1,0 +1,147 @@
+ Job start date: 2024-03-04  time: 12:06:08
+ ---------------------------------------------------
+----------------------
+ HYPE version 5.12.1  
+----------------------
+ File opened: ./info.txt
+ WARNING: Unknown code on info.txt line: modeloption riverflowmodel	0
+ File read  : ./info.txt
+ Simulation information loaded (info.txt)
+
+ --------Information about the simulation---------
+ Current model set-up:  ./
+ Simulation sequence:              0
+
+ Simulation begin date  1980-01-01 00:00
+ Crit/Output start date 1980-01-01 00:00
+ Simulation end date    2015-12-31 00:00
+ Simulation steplength  1d  
+ Number of substances modelled           0
+ Model options:
+                PET model           3
+           Snowfall model           0
+       Snowfalldist model           2
+           Snowmelt model           0
+           Snowevap model           1
+           Snowheat model           0
+        Snowdensity model           0
+  Frozen soil water flows           2
+      Lakeriver ice model           0
+   Glacier initialization           1
+   Deep groundwater model           0
+         Floodplain model           0
+     Surface runoff model           0
+       Infiltration model           3
+            Wetland model           0
+ Surface water temp model           0
+      Growth season model           0
+            Erosion model           0
+       Soil leakage model           0
+       Ilake connectivity           2
+
+ Output information:
+    2 output variables are asked to be saved for  14 subbasins
+    9 output variables will be saved as timeseries output
+ -------------------------------------------------
+
+ File opened: ./GeoClass.txt
+ Class information loaded (GeoClass)
+ File opened: ./GeoData.txt
+ Geographical information loaded
+ File opened: ./Pobs.txt
+ File ready: ./Pobs.txt
+ File opened: ./Tobs.txt
+ File ready: ./Tobs.txt
+ File opened: ./TMINobs.txt
+ File ready: ./TMINobs.txt
+ File opened: ./TMAXobs.txt
+ File ready: ./TMAXobs.txt
+ File ready: ./Qobs.txt
+ File opened: ./par.txt
+ Model parameters loaded
+ File opened: ./CatchGroup.txt
+ File loaded: ./CatchGroup.txt
+ File opened: ./CatchDes.txt
+ File loaded: ./CatchDes.txt
+ File opened: ./reg_par.txt
+ File loaded: ./reg_par.txt
+ File opened: ./CatchGroup.txt
+ File loaded: ./CatchGroup.txt
+ File opened: ./CatchDes.txt
+ File loaded: ./CatchDes.txt
+ File opened: ./reg_par.txt
+ File loaded: ./reg_par.txt
+
+ ---------------------------------------------------
+ Initialisations finished, calculations starts: 2024-03-04  time: 12:06:20
+ ---------------------------------------------------
+Start simulate year: 1980
+Start simulate year: 1981
+Start simulate year: 1982
+Start simulate year: 1983
+Start simulate year: 1984
+Start simulate year: 1985
+Start simulate year: 1986
+Start simulate year: 1987
+Start simulate year: 1988
+Start simulate year: 1989
+Start simulate year: 1990
+Start simulate year: 1991
+Start simulate year: 1992
+Start simulate year: 1993
+Start simulate year: 1994
+Start simulate year: 1995
+Start simulate year: 1996
+Start simulate year: 1997
+Start simulate year: 1998
+Start simulate year: 1999
+Start simulate year: 2000
+Start simulate year: 2001
+Start simulate year: 2002
+Start simulate year: 2003
+Start simulate year: 2004
+Start simulate year: 2005
+Start simulate year: 2006
+Start simulate year: 2007
+Start simulate year: 2008
+Start simulate year: 2009
+Start simulate year: 2010
+Start simulate year: 2011
+Start simulate year: 2012
+Start simulate year: 2013
+Start simulate year: 2014
+Start simulate year: 2015
+
+ Total criteria value:  -0.304415703      Conditional criteria value:    0.00000000     , threshold:    0.00000000    
+
+ Variables: rout, cout
+ Period: DD
+ Regional NSE:  0.703911364    
+ Regional  RA:  -9999.00000    
+ Regional  RE: -0.190351292    
+ Regional MAE:   3.44623208    
+ Average  NSE: -0.176561803    
+ Average   RA:  -9999.00000    
+ Average   RE:   1.51536195E-02
+ Average RSDE:   3.72400740E-03
+ Average   CC:  0.572919071    
+ Average  ARE:  0.373717546    
+ Average  KGE:  0.304415703    
+ Aver scalKGE:  0.256906658    
+ Spatial  NSE:  0.930166006    
+ Spatial   RA:  -9999.00000    
+ Spatial   RE: -0.179309115    
+ Spatial Bias:  -9999.00000    
+ Spatial RMSE:  -9999.00000    
+ Kendalls Tau:  -9999.00000    
+ Median   NSE:  0.159513697    
+ Median    RA:  -9999.00000    
+ Median   KGE:  0.451780587    
+ Median NRMSE:   4.06774655E-02
+ Mean    NSEW: -0.127930835    
+ Number of data for regional criterion:   132877.000    
+ Number of areas in mean/median criterion:   14.0000000    
+
+
+ ---------------------------------------------------
+ Job finished date: 2024-03-04  time: 12:09:51
