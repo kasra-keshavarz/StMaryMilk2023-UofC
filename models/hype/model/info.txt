@@ -1,0 +1,84 @@
+!! ----------------------------------------------------------------------------							
+!!							
+!! HYPE - Milk River & St. Mary's River HYPE
+!!							
+!! -----------------------------------------------------------------------------							
+!! Check Indata during first runs (deactivate after first runs) 
+indatacheckonoff	0
+indatachecklevel	0
+!!
+!! -----------------------------------------------------------------------------							
+!!						
+!! Simulation settings:							
+!!							
+!! -----------------	 
+bdate	1980-01-01
+edate	2015-12-31
+resultdir	./
+instate	n
+warning	y
+!! outstatedate 
+readdaily	y
+submodel	n
+calibration	n
+readobsid	n
+soilstretch	n
+steplength	1d
+!! -----------------------------------------------------------------------------							
+!!							
+!! Enable/disable optional input files
+!!							
+!! -----------------					
+regestimate	y	!! For seperating general params
+readsfobs	n	!! For observed snowfall fractions in SFobs.txt
+readswobs	n	!! For observed shortwave radiation in SWobs.txt
+readuobs	n	!! For observed wind speeds in Uobs.txt
+readrhobs	n	!! For observed relative humidity in RHobs.txt
+readtminobs	y	!! For observed min air temperature in TMINobs.txt
+readtmaxobs	y	!! For observed max air temperature in TMAXobs.txt
+soiliniwet	n	!! initiates soil water to porosity instead of field capacity which is default (N). Set Y to use porosity.
+usestop84	n	!! initiates soil water to porosity instead of field capacity which is default (N). Set Y to use porosity.
+!! -----------------------------------------------------------------------------							
+!!							
+!! Define model options (optional)
+!!							
+!! -----------------							
+modeloption snowfallmodel	0
+modeloption snowdensity	0
+modeloption snowfalldist	2
+modeloption snowheat	0
+modeloption snowmeltmodel	0
+modeloption snowevaporation	1
+modeloption lakeriverice	0
+modeloption deepground	0
+modeloption glacierini	1
+modeloption frozensoil	2
+modeloption infiltration	3
+modeloption surfacerunoff	0
+modeloption petmodel	3
+modeloption riverflowmodel	0
+modeloption soilleakage	0
+modeloption connectivity	2
+!! ------------------------------------------------------------------------------------							
+!!							
+!! Define outputs
+!! -----------------							
+!! BASIN outputs 
+!! 58232	58213	58208	 58408	58643	58308	58346	58435	58356	58363	58418	58290	58328	58292 58304
+!! -----------------							
+basinoutput variable	cout	rout
+basinoutput meanperiod	1
+basinoutput decimals	3
+basinoutput subbasin	58232	58213	58208	 58408	58643	58308	58346	58435	58356	58363	58418	58290	58328	58292
+!! printwaterbal	N
+!! -----------------			
+!! Criterion-specific settings
+!! -----------------				
+crit 1 criterion	AKG
+crit 1 cvariable	cout
+crit 1 rvariable	rout
+crit 1 weight	1
+!! time outputs 
+timeoutput 1 variable	prec evap epot cilv cpSF cpRF cloc fcon cfsc
+timeoutput 1 meanperiod 1
+timeoutput 1 decimals 3
