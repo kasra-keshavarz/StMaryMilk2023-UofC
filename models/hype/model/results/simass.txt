@@ -1,0 +1,36 @@
+ Simulation assessment all variables/criterions used
+ Simulation number:            1
+ Total criteria value:  -0.304415703      Conditional criteria value:    0.00000000     , threshold:    0.00000000    
+
+ Individual criterions
+        crit  1
+       0.304416
+
+ Variables: rout, cout
+ Period: DD
+ Regional NSE:  0.703911364    
+ Regional  RA:  -9999.00000    
+ Regional  RE: -0.190351292    
+ Regional MAE:   3.44623208    
+ Average  NSE: -0.176561803    
+ Average   RA:  -9999.00000    
+ Average   RE:   1.51536195E-02
+ Average RSDE:   3.72400740E-03
+ Average   CC:  0.572919071    
+ Average  ARE:  0.373717546    
+ Average  KGE:  0.304415703    
+ Aver scalKGE:  0.256906658    
+ Spatial  NSE:  0.930166006    
+ Spatial   RA:  -9999.00000    
+ Spatial   RE: -0.179309115    
+ Spatial Bias:  -9999.00000    
+ Spatial RMSE:  -9999.00000    
+ Kendalls Tau:  -9999.00000    
+ Median   NSE:  0.159513697    
+ Median    RA:  -9999.00000    
+ Median   KGE:  0.451780587    
+ Median NRMSE:   4.06774655E-02
+ Mean    NSEW: -0.127930835    
+ Number of data for regional criterion:   132877.000    
+ Number of areas in mean/median criterion:   14.0000000    
+

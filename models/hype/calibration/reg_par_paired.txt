@@ -1,0 +1,21 @@
+2
+damp	___dampA
+damp	2
+rivvel	___rivvelA
+rivvel	3
+damp	___dampB
+damp	2
+rivvel	___rivvelB
+rivvel	3
+damp	___dampC
+damp	2
+rivvel	___rivvelC
+rivvel	3
+damp	___dampD
+damp	2
+rivvel	___rivvelD
+rivvel	3
+damp	___dampE
+damp	2
+rivvel	___rivvelE
+rivvel	3

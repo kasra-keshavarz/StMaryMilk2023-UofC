@@ -1,0 +1,52 @@
+ttpi	1.7083																						
+sdnsnew	0.13																						
+snowdensdt	0.0016																						
+fsceff	1.0																						
+cmrefr	0.2																						
+whcsnow	0.08																						
+ttmp	___ttmpA	___ttmpB	___ttmpC	___ttmpD	___ttmpE	___ttmpF	___ttmpG	___ttmpH	___ttmpI	___ttmpJ	___ttmpK	___ttmpL	___ttmpM	___ttmpN	___ttmpO	___ttmpP	___ttmpQ	___ttmpR	___ttmpS	___ttmpT	___ttmpU	___ttmpV	___ttmpW
+cmlt	___cmltA	___cmltB	___cmltC	___cmltD	___cmltE	___cmltF	___cmltG	___cmltH	___cmltI	___cmltJ	___cmltK	___cmltL	___cmltM	___cmltN	___cmltO	___cmltP	___cmltQ	___cmltR	___cmltS	___cmltT	___cmltU	___cmltV	___cmltW
+snalbmin	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4	0.4
+snalbmax	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8
+snalbkexp	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1	0.1
+fscdistmax	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8
+fscdist0	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2	0.2
+fscdist1	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001	0.001
+fscmax	1.0																						
+fscmin	0.01																						
+fsclim	0.001																						
+fsck1	0.2																						
+fsckexp	1e-06																						
+lp	___lpA																						
+epotdist	___epotdistA																						
+krs	0.16																						
+cevpcorr	0.0																						
+kc3	0.614	0.688	1.201224208	1.334493399	0.917	0.607	1.020708799	0.859	1.020708799	1.3	1.26	0.893	1.024959087	1.25	0.682	0.603	0.6	1.09	1.16	1.16	1.16	1.16	1.16
+alb	___albA	___albB	___albC	___albD	___albE	___albF	___albG	___albH	___albI	___albJ	___albK	___albL	___albM	___albN	___albO	___albP	___albQ	___albR	___albS	___albT	___albU	___albV	___albW
+fepotsnow	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8	0.8
+deepmem	1000.0																						
+bfroznsoil	___bfroznsoilA	___bfroznsoilB	___bfroznsoilC	___bfroznsoilD	___bfroznsoilE	___bfroznsoilF	___bfroznsoilG	___bfroznsoilH	___bfroznsoilI	___bfroznsoilJ	___bfroznsoilK	___bfroznsoilL	___bfroznsoilM	___bfroznsoilN	___bfroznsoilO	___bfroznsoilP	___bfroznsoilQ						
+logsatmp	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15						
+bcosby	___bcosbyA	___bcosbyB	___bcosbyC	___bcosbyD	___bcosbyE	___bcosbyF	___bcosbyG	___bcosbyH	___bcosbyI	___bcosbyJ	___bcosbyK	___bcosbyL	___bcosbyM	___bcosbyN	___bcosbyO	___bcosbyP	___bcosbyQ						
+surfmem	17.8	17.8	17.8	17.8	17.8	17.8	17.8	17.8	17.8	17.8	17.8	17.8	17.8	5.15	17.8	17.8	17.8	5.15	17.8	17.8	17.8	17.8	17.8
+depthrel	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	1.1152	2.47	1.1152	1.1152	1.1152	2.47	1.1152	1.1152	1.1152	1.1152	1.1152
+frost	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0
+srrcs	___srrcsA	___srrcsB	___srrcsC	___srrcsD	___srrcsE	___srrcsF	___srrcsG	___srrcsH	___srrcsI	___srrcsJ	___srrcsK	1	___srrcsM	___srrcsN	___srrcsO	___srrcsP	___srrcsQ	___srrcsR	___srrcsS	___srrcsT	___srrcsU	1	___srrcsW
+rrcs1	___rrcs1A	___rrcs1B	___rrcs1C	___rrcs1D	___rrcs1E	___rrcs1F	___rrcs1G	___rrcs1H	___rrcs1I	___rrcs1J	___rrcs1K	___rrcs1L	___rrcs1M	___rrcs1N	___rrcs1O	___rrcs1P	___rrcs1Q						
+rrcs2	___rrcs2A	___rrcs2B	___rrcs2C	___rrcs2D	___rrcs2E	___rrcs2F	___rrcs2G	___rrcs2H	___rrcs2I	___rrcs2J	___rrcs2K	___rrcs2L	___rrcs2M	___rrcs2N	___rrcs2O	___rrcs2P	___rrcs2Q						
+sfrost	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0						
+srrate	___srrateA	___srrateB	___srrateC	___srrateD	___srrateE	___srrateF	___srrateG	___srrateH	___srrateI	___srrateJ	___srrateK	___srrateL	___srrateM	___srrateN	___srrateO	___srrateP	___srrateQ						
+wcwp1	___wcwp1A	___wcwp1B	___wcwp1C	___wcwp1D	___wcwp1E	___wcwp1F	___wcwp1G	___wcwp1H	___wcwp1I	___wcwp1J	___wcwp1K	___wcwp1L	___wcwp1M	___wcwp1N	___wcwp1O	___wcwp1P	___wcwp1Q						
+wcwp2	___wcwp2A	___wcwp2B	___wcwp2C	___wcwp2D	___wcwp2E	___wcwp2F	___wcwp2G	___wcwp2H	___wcwp2I	___wcwp2J	___wcwp2K	___wcwp2L	___wcwp2M	___wcwp2N	___wcwp2O	___wcwp2P	___wcwp2Q						
+wcwp3	___wcwp3A	___wcwp3B	___wcwp3C	___wcwp3D	___wcwp3E	___wcwp3F	___wcwp3G	___wcwp3H	___wcwp3I	___wcwp3J	___wcwp3K	___wcwp3L	___wcwp3M	___wcwp3N	___wcwp3O	___wcwp3P	___wcwp3Q						
+wcfc1	___wcfc1A	___wcfc1B	___wcfc1C	___wcfc1D	___wcfc1E	___wcfc1F	___wcfc1G	___wcfc1H	___wcfc1I	___wcfc1J	___wcfc1K	___wcfc1L	___wcfc1M	___wcfc1N	___wcfc1O	___wcfc1P	___wcfc1Q						
+wcfc2	___wcfc2A	___wcfc2B	___wcfc2C	___wcfc2D	___wcfc2E	___wcfc2F	___wcfc2G	___wcfc2H	___wcfc2I	___wcfc2J	___wcfc2K	___wcfc2L	___wcfc2M	___wcfc2N	___wcfc2O	___wcfc2P	___wcfc2Q						
+wcfc3	___wcfc3A	___wcfc3B	___wcfc3C	___wcfc3D	___wcfc3E	___wcfc3F	___wcfc3G	___wcfc3H	___wcfc3I	___wcfc3J	___wcfc3K	___wcfc3L	___wcfc3M	___wcfc3N	___wcfc3O	___wcfc3P	___wcfc3Q						
+wcep1	___wcep1A	___wcep1B	___wcep1C	___wcep1D	___wcep1E	___wcep1F	___wcep1G	___wcep1H	___wcep1I	___wcep1J	___wcep1K	___wcep1L	___wcep1M	___wcep1N	___wcep1O	___wcep1P	___wcep1Q						
+wcep2	___wcep2A	___wcep2B	___wcep2C	___wcep2D	___wcep2E	___wcep2F	___wcep2G	___wcep2H	___wcep2I	___wcep2J	___wcep2K	___wcep2L	___wcep2M	___wcep2N	___wcep2O	___wcep2P	___wcep2Q						
+wcep3	___wcep3A	___wcep3B	___wcep3C	___wcep3D	___wcep3E	___wcep3F	___wcep3G	___wcep3H	___wcep3I	___wcep3J	___wcep3K	___wcep3L	___wcep3M	___wcep3N	___wcep3O	___wcep3P	___wcep3Q						
+mperc1	___mperc1A	___mperc1B	___mperc1C	___mperc1D	___mperc1E	___mperc1F	___mperc1G	___mperc1H	___mperc1I	___mperc1J	___mperc1K	___mperc1L	___mperc1M	___mperc1N	___mperc1O	___mperc1P	___mperc1Q						
+mperc2	___mperc2A	___mperc2B	___mperc2C	___mperc2D	___mperc2E	___mperc2F	___mperc2G	___mperc2H	___mperc2I	___mperc2J	___mperc2K	___mperc2L	___mperc2M	___mperc2N	___mperc2O	___mperc2P	___mperc2Q						
+rrcs3	___rrcs3A																						
+rcgrw	0.0																						
+qmean	200.0																						
